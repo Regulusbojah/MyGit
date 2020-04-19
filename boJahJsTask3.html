@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+    <title>My task 3</title>
+
+    </head>
+
+    <body>
+        <script>
+            //create a function that takes one parameter
+        function myCal(count){
+            let arrayN=[];
+            // check if the number from 1 to the given parameter is divisible by 2,3,5
+            for(let number=1; number<=count; number++) {
+                let accumulator=''
+         if(number%5===0 ||number%3===0 || number%2===0){
+            //number divisible by 2 return "yu"
+            if(number%2===0){
+                if(accumulator!='')
+                accumulator+='-yu' 
+                else{
+                    accumulator='yu' 
+                }
+            }
+            //number divisible by 3 return "gi"
+             if(number%3===0){
+                    if(accumulator!='')
+                    accumulator+='-gi' 
+                    else{
+                        accumulator='gi' 
+                    }
+                }
+                //numbeer divisible by 5 return "oh"
+                if(number%5===0){
+                    if(accumulator!='')
+                    accumulator+='-oh' 
+                    else{
+                        accumulator='oh' 
+                    }
+                }
+        }
+                else{
+                    accumulator=number
+                }
+                arrayN.push(accumulator)
+            }
+            console.log(arrayN);
+        }
+    </script>
+    </body>
+</html>
+
